@@ -1,0 +1,221 @@
+[
+  {
+    "_id": "aa9e7860-5c2f-11e7-93bf-ff969ebc1e8e",
+    "_type": "dashboard",
+    "_source": {
+      "title": "News Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":6,\"id\":\"204c5aa0-6275-11e7-8464-2f43ac7c0856\",\"panelIndex\":12,\"row\":1,\"size_x\":7,\"size_y\":6,\"type\":\"visualization\"},{\"col\":3,\"id\":\"1bf16f80-6276-11e7-8464-2f43ac7c0856\",\"panelIndex\":13,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"category\",\"source\",\"title\",\"description\",\"link\",\"pubDate\",\"country\",\"geo_point\",\"mediaFiles\"],\"id\":\"6ba3afa0-6273-11e7-8464-2f43ac7c0856\",\"panelIndex\":14,\"row\":16,\"size_x\":12,\"size_y\":10,\"sort\":[\"pubDate\",\"desc\"],\"type\":\"search\"},{\"col\":1,\"id\":\"99980280-6327-11e7-84c7-c13d5451cf74\",\"panelIndex\":15,\"row\":1,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"2a5c34d0-6332-11e7-b249-153b8742ac96\",\"panelIndex\":16,\"row\":7,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":6,\"id\":\"a2579ff0-6329-11e7-84c7-c13d5451cf74\",\"panelIndex\":18,\"row\":7,\"size_x\":7,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"e20b7900-6347-11e7-8b0f-87cb547c3856\",\"panelIndex\":19,\"row\":3,\"size_x\":5,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"2f2d42e0-6348-11e7-8b0f-87cb547c3856\",\"panelIndex\":20,\"row\":11,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-12\":{\"mapCenter\":[26.43122806450644,-2.109375],\"mapZoom\":1,\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}},\"P-13\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "99b0ccc0-60d9-11e7-a986-eda868bc13da",
+    "_type": "search",
+    "_source": {
+      "title": "News: Top Stories",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "category",
+        "description",
+        "link",
+        "mediaFiles",
+        "pubDate",
+        "source",
+        "title"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"news\",\"highlightAll\":true,\"version\":true,\"filter\":[],\"query\":{\"query_string\":{\"query\":\"category: Top Stories\",\"analyze_wildcard\":true}}}"
+      }
+    }
+  },
+  {
+    "_id": "b6af1540-6276-11e7-af88-9b9b3b30acf3",
+    "_type": "search",
+    "_source": {
+      "title": "news search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "category",
+        "source",
+        "title",
+        "description",
+        "link",
+        "pubDate",
+        "country",
+        "geo_point",
+        "mediaFiles"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"news\",\"highlightAll\":true,\"version\":true,\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "6ba3afa0-6273-11e7-8464-2f43ac7c0856",
+    "_type": "search",
+    "_source": {
+      "title": "News search tabular",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "category",
+        "source",
+        "title",
+        "description",
+        "link",
+        "pubDate",
+        "country",
+        "geo_point",
+        "mediaFiles"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"news\",\"highlightAll\":true,\"version\":true,\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "204c5aa0-6275-11e7-8464-2f43ac7c0856",
+    "_type": "visualization",
+    "_source": {
+      "title": "News Distribution by Location",
+      "visState": "{\"title\":\"News Distribution by Location\",\"type\":\"tile_map\",\"params\":{\"mapType\":\"Shaded Circle Markers\",\"isDesaturated\":false,\"addTooltip\":true,\"heatMaxZoom\":\"3\",\"heatMinOpacity\":\"0\",\"heatRadius\":\"24\",\"heatBlur\":\"15\",\"heatNormalizeData\":true,\"legendPosition\":\"topright\",\"mapZoom\":2,\"mapCenter\":[0,0],\"wms\":{\"enabled\":true,\"url\":\"https://basemap.nationalmap.gov/arcgis/services/USGSTopo/MapServer/WMSServer\",\"options\":{\"version\":\"1.3.0\",\"layers\":\"0\",\"format\":\"image/png\",\"transparent\":true,\"attribution\":\"Maps provided by USGS\",\"styles\":\"\"}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"News Count\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"geo_point\",\"autoPrecision\":true,\"useGeocentroid\":true,\"precision\":2,\"customLabel\":\"Geo Location\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"mapCenter\":[0.08475273722372763,-0.0822128914296627],\"mapZoom\":1}",
+      "description": "",
+      "savedSearchId": "6ba3afa0-6273-11e7-8464-2f43ac7c0856",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "6c5f0290-6332-11e7-b249-153b8742ac96",
+    "_type": "visualization",
+    "_source": {
+      "title": "News Distribution by Category",
+      "visState": "{\"title\":\"News Distribution by Category\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"category\",\"size\":15,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"News Category\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "6ba3afa0-6273-11e7-8464-2f43ac7c0856",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "1bf16f80-6276-11e7-8464-2f43ac7c0856",
+    "_type": "visualization",
+    "_source": {
+      "title": "Duration of News Feed Collection",
+      "visState": "{\"title\":\"Duration of News Feed Collection\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"pubDate\",\"customLabel\":\"Start Date\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"pubDate\",\"customLabel\":\"End Date\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "6ba3afa0-6273-11e7-8464-2f43ac7c0856",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "99980280-6327-11e7-84c7-c13d5451cf74",
+    "_type": "visualization",
+    "_source": {
+      "title": "News Feed",
+      "visState": "{\"title\":\"News Feed\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":60},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"News Feed\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "6ba3afa0-6273-11e7-8464-2f43ac7c0856",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "2a5c34d0-6332-11e7-b249-153b8742ac96",
+    "_type": "visualization",
+    "_source": {
+      "title": "News Distribution by Sources and Category",
+      "visState": "{\"title\":\"News Distribution by Sources and Category\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"source\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"News Source\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"category\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "6ba3afa0-6273-11e7-8464-2f43ac7c0856",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "e20b7900-6347-11e7-8b0f-87cb547c3856",
+    "_type": "visualization",
+    "_source": {
+      "title": "Countries mentioned recently in News",
+      "visState": "{\"title\":\"Countries mentioned recently in News\",\"type\":\"tagcloud\",\"params\":{\"maxFontSize\":37,\"minFontSize\":17,\"orientation\":\"single\",\"scale\":\"linear\",\"hideLabel\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"pubDate\",\"customLabel\":\"News Published Date\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"country\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Country\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "6ba3afa0-6273-11e7-8464-2f43ac7c0856",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "2f2d42e0-6348-11e7-8b0f-87cb547c3856",
+    "_type": "visualization",
+    "_source": {
+      "title": "Latest News Headlines",
+      "visState": "{\"title\":\"Latest News Headlines\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":16,\"maxFontSize\":37},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"pubDate\",\"customLabel\":\"News Published Date\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"title\",\"size\":25,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"News Headlines\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "6ba3afa0-6273-11e7-8464-2f43ac7c0856",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "a2579ff0-6329-11e7-84c7-c13d5451cf74",
+    "_type": "visualization",
+    "_source": {
+      "title": "News Distribution by Date",
+      "visState": "{\"title\":\"News Distribution by Date\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"News Published Date\"},\"type\":\"category\"}],\"defaultYExtents\":false,\"drawLinesBetweenPoints\":true,\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"},\"valueAxis\":null},\"interpolate\":\"linear\",\"legendPosition\":\"right\",\"radiusRatio\":9,\"scale\":\"linear\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Number of News Feeds\"},\"drawLinesBetweenPoints\":true,\"interpolate\":\"linear\",\"lineWidth\":2,\"mode\":\"normal\",\"show\":true,\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"setYExtents\":false,\"showCircles\":true,\"times\":[],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Number of News Feeds\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Number of News Feeds\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"pubDate\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"News Published Date\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"category\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"News Category\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "6ba3afa0-6273-11e7-8464-2f43ac7c0856",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]
