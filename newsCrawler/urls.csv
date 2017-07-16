@@ -1,0 +1,19 @@
+World,http://rss.nytimes.com/services/xml/rss/nyt/World.xml
+World,http://rss.cnn.com/rss/edition_world.rss
+World,http://feeds.bbci.co.uk/news/world/rss.xml
+Business,http://rss.nytimes.com/services/xml/rss/nyt/Business.xml
+Business,http://rss.cnn.com/rss/money_news_international.rss
+Business,http://feeds.bbci.co.uk/news/business/rss.xml
+Technology,http://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+Technology,http://feeds.bbci.co.uk/news/technology/rss.xml
+Technology,http://rss.cnn.com/rss/edition_technology.rss
+Sports,http://rss.nytimes.com/services/xml/rss/nyt/Sports.xml
+Sports,http://rss.cnn.com/rss/edition_sport.rss
+Science,http://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+Science,http://rss.cnn.com/rss/edition_space.rss
+Health,http://rss.nytimes.com/services/xml/rss/nyt/Health.xml
+Health,http://feeds.bbci.co.uk/news/health/rss.xml
+Top Stories,http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
+Top Stories,http://feeds.bbci.co.uk/news/rss.xml
+Top Stories,http://rss.cnn.com/rss/edition.rss
+Top Stories,http://rss.cnn.com/rss/cnn_latest.rss

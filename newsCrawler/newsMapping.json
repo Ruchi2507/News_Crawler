@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "news_type": {
+      "_all":       { "enabled": true  },
+      "properties": {
+        "category":    { "type": "keyword" },
+        "description": { "type": "keyword"},
+        "pubDate": { "type": "date", "format": "yyyy-MM-dd"},
+        "source" : {"type" : "keyword" },
+        "country" : {"type" : "keyword" },
+        "mediaFiles" : {"type" : "keyword"},
+       "geo_point" : {"type" : "geo_point"},
+       "link" : {"type" : "keyword"},
+       "title" : {"type" : "keyword"}
+      }
+    }
+  }
+}
