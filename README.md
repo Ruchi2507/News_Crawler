@@ -7,7 +7,7 @@ News Crawler is created using Python Library 'Scrapy'.
   * Crawled News can be visualized on Kibana Dashboard.
 
 ## Installation and Usage:
-  * Please refer README.pdf
+  * Please refer README.pdf 
   
 ## Information provided by Kibana Dashboard:
   * Total news feeds fetched.
